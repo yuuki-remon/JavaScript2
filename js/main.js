@@ -1,5 +1,3 @@
-'use strict';
-
 {
   const fizznumber = document.getElementById('fizz');
   const buzznumber = document.getElementById('buzz');
@@ -9,7 +7,7 @@
   
   function clearNumber() {
     while (ul.firstChild) {
-      let remove = ul.removeChild(ul.firstChild);
+      ul.removeChild(ul.firstChild);
     }
     numbers.length = 0;
   }
